@@ -11,3 +11,10 @@ spec:
   dnsNames:
     - walterarguello.xyz
     - www.walterarguello.xyz
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - walterarguello.xyz
+          - www.walterarguello.xyz
